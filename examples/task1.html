@@ -1,0 +1,75 @@
+<div id="brinza-task-description" class="protected">
+<p>A non-empty zero-indexed array A consisting of N non-negative integers is given. For elements A[P] and A[Q] that are distinct, i.e. P ≠ Q, their <i>distance</i> is defined as:</p>
+<blockquote><ul style="margin: 10px;padding: 0px;"><li>(A[P] − A[Q]) if (A[P] − A[Q]) ≥ 0;</li>
+<li>(A[Q] − A[P]) if (A[P] − A[Q]) &lt; 0.</li>
+</ul>
+</blockquote><p>Write a function:</p>
+<blockquote><p class="lang-c" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+int solution(int A[], int N);
+</tt></p></blockquote>
+<blockquote><p class="lang-cpp" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+int solution(vector&lt;int&gt; &amp;A);
+</tt></p></blockquote>
+<blockquote><p class="lang-pas" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+function solution(A: array of longint; N: longint): longint;
+</tt></p></blockquote>
+<blockquote><p class="lang-java" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+class Solution { public int solution(int[] A); }
+</tt></p></blockquote>
+<blockquote><p class="lang-py" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+def solution(A)
+</tt></p></blockquote>
+<blockquote><p class="lang-php" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+function solution($A);
+</tt></p></blockquote>
+<blockquote><p class="lang-cs" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+class Solution { public int solution(int[] A); }
+</tt></p></blockquote>
+<blockquote><p class="lang-js" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+function solution(A);
+</tt></p></blockquote>
+<blockquote><p class="lang-pl" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+sub solution { my (@A)=@_; ... }
+</tt></p></blockquote>
+<blockquote><p class="lang-rb" style="font-family: monospace; font-size: 9pt; display: block"><tt>
+def solution(a)
+</tt></p></blockquote>
+<blockquote><p class="lang-vb" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+Private Function solution(A As Integer()) As Integer
+</tt></p></blockquote>
+<blockquote><p class="lang-lua" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+function solution(A)
+</tt></p></blockquote>
+<blockquote><p class="lang-m" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+int solution(NSMutableArray *A);
+</tt></p></blockquote>
+<blockquote><p class="lang-scala" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+object Solution { def solution(A: Array[Int]): Int }
+</tt></p></blockquote>
+<p>that, given a zero-indexed array A consisting of N non-negative integers, returns the minimum distance between two distinct elements of A.</p>
+<p>For example, given array A such that:</p>
+<p></p><pre><tt>  A[0] = 8
+  A[1] = 24
+  A[2] = 3
+  A[3] = 20
+  A[4] = 1
+  A[5] = 17</tt></pre>
+<p>the function should return 2, because (A[2] − A[4]) = 2  and no other two distinct elements of A have a smaller distance.</p>
+<p>Given array A such that:</p>
+<p></p><pre><tt>  A[0] = 7
+  A[1] = 21
+  A[2] = 3
+  A[3] = 42
+  A[4] = 3
+  A[5] = 7</tt></pre>
+<p>the function should return 0, because A[0] − A[5] = A[2] − A[4] = 0 and it is the smallest possible distance between two distinct elements of the array.</p>
+<p>Assume that:</p>
+<blockquote><ul style="margin: 10px;padding: 0px;"><li>N is an integer within the range [<span class="number">2</span>..<span class="number">100,000</span>];</li>
+<li>each element of array A is an integer within the range [<span class="number">0</span>..<span class="number">1,000,000</span>].</li>
+</ul>
+</blockquote><p>Complexity:</p>
+<blockquote><ul style="margin: 10px;padding: 0px;"><li>expected worst-case time complexity is O(N*log(N));</li>
+<li>expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).</li>
+</ul>
+</blockquote><p>Elements of input arrays can be modified.</p>
+</div>

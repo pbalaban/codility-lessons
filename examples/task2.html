@@ -1,0 +1,80 @@
+<div id="brinza-task-description" class="protected">
+<p>A non-empty zero-indexed array A consisting of N integers is given. A <i>subsequence</i> of array A is any sequence obtained by removing some (possibly none or all) elements from A. The <i>amplitude</i> of a subsequence of array A is the difference between the largest and the smallest element in this subsequence. The amplitude of the empty subsequence is assumed to be 0.</p>
+<p>For example, consider array A consisting of six elements such that:</p>
+<p></p><pre><tt>  A[0] =  6
+  A[1] = 10
+  A[2] =  6
+  A[3] =  9
+  A[4] =  7
+  A[5] =  8</tt></pre>
+<p>These are some of the subsequences of array A and their amplitudes:</p>
+<blockquote><ul style="margin: 10px;padding: 0px;"><li>subsequence [6, 6, 7] has amplitude 1;</li>
+<li>subsequence [6, 10, 6, 9, 7, 8] has amplitude 4;</li>
+<li>subsequence [6, 6, 7, 8] has amplitude 2;</li>
+<li>subsequence [9, 7] has amplitude 2;</li>
+<li>subsequence [9] has amplitude 0;</li>
+<li>subsequence [] has amplitude 0.</li>
+</ul>
+</blockquote><p>A subsequence of array A is called <i>quasi</i>-<i>constant</i> if its amplitude does not exceed 1. In the example above, the first, fifth and sixth subsequences are quasi-constant. Subsequence [6, 6, 7] is the longest possible quasi-constant subsequence of array A.</p>
+<p>Write a function:</p>
+<blockquote><p class="lang-c" style="font-family: monospace; font-size: 9pt; display: block"><tt>
+int solution(int A[], int N);
+</tt></p></blockquote>
+<blockquote><p class="lang-cpp" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+int solution(vector&lt;int&gt; &amp;A);
+</tt></p></blockquote>
+<blockquote><p class="lang-pas" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+function solution(A: array of longint; N: longint): longint;
+</tt></p></blockquote>
+<blockquote><p class="lang-java" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+class Solution { public int solution(int[] A); }
+</tt></p></blockquote>
+<blockquote><p class="lang-py" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+def solution(A)
+</tt></p></blockquote>
+<blockquote><p class="lang-php" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+function solution($A);
+</tt></p></blockquote>
+<blockquote><p class="lang-cs" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+class Solution { public int solution(int[] A); }
+</tt></p></blockquote>
+<blockquote><p class="lang-js" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+function solution(A);
+</tt></p></blockquote>
+<blockquote><p class="lang-pl" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+sub solution { my (@A)=@_; ... }
+</tt></p></blockquote>
+<blockquote><p class="lang-rb" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+def solution(a)
+</tt></p></blockquote>
+<blockquote><p class="lang-vb" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+Private Function solution(A As Integer()) As Integer
+</tt></p></blockquote>
+<blockquote><p class="lang-lua" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+function solution(A)
+</tt></p></blockquote>
+<blockquote><p class="lang-m" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+int solution(NSMutableArray *A);
+</tt></p></blockquote>
+<blockquote><p class="lang-scala" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+object Solution { def solution(A: Array[Int]): Int }
+</tt></p></blockquote>
+<p>that, given a non-empty zero-indexed array A consisting of N integers, returns the length of the longest quasi-constant subsequence of array A.</p>
+<p>For example, given array A consisting of six elements such that:</p>
+<p></p><pre><tt>  A[0] =  6
+  A[1] = 10
+  A[2] =  6
+  A[3] =  9
+  A[4] =  7
+  A[5] =  8</tt></pre>
+<p>the function should return 3, as explained above.</p>
+<p>Assume that:</p>
+<blockquote><ul style="margin: 10px;padding: 0px;"><li>N is an integer within the range [<span class="number">1</span>..<span class="number">100,000</span>];</li>
+<li>each element of array A is an integer within the range [<span class="number">−2147483648</span>..<span class="number">2147483647</span>].</li>
+</ul>
+</blockquote><p>Complexity:</p>
+<blockquote><ul style="margin: 10px;padding: 0px;"><li>expected worst-case time complexity is O(N*log(N));</li>
+<li>expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).</li>
+</ul>
+</blockquote><p>Elements of input arrays can be modified.</p>
+</div>

@@ -1,0 +1,78 @@
+<div id="brinza-task-description" class="protected">
+<p>A non-empty zero-indexed array A consisting of N integers is given.</p>
+<p>We wish to consider an integer Y, which lies between the minimal and maximal values in array A. More precisely, <b>min</b>(A[0], A[1], ..., A[N − 1]) ≤ Y ≤ <b>max</b>(A[0], A[1], ..., A[N − 1]).</p>
+<p>For each value of Y, the size of its <i>gap</i> is the distance from Y to the closest value in array A. More precisely, the size of the gap equals <b>min</b>(|A[0] − Y|, |A[1] − Y|, ..., |A[N − 1] − Y|). Our goal is to find the largest possible gap.</p>
+<p>For example, consider array A such that:</p>
+<p></p><pre><tt>  A[0] = 10
+  A[1] = 0
+  A[2] = 8
+  A[3] = 2
+  A[4] = -1
+  A[5] = 12
+  A[6] = 11
+  A[7] = 3</tt></pre>
+<p>For both values Y = 5 and Y = 6 the gap size equals 2, since <b>min</b>(|3 − 5|, |8 − 5|) = <b>min</b>(|3 − 6|, |8 − 6|) = 2, and this is the largest possible gap size.</p>
+<p>Write a function:</p>
+<blockquote><p class="lang-c" style="font-family: monospace; font-size: 9pt; display: block"><tt>
+int solution(int A[], int N);
+</tt></p></blockquote>
+<blockquote><p class="lang-cpp" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+int solution(vector&lt;int&gt; &amp;A);
+</tt></p></blockquote>
+<blockquote><p class="lang-pas" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+function solution(A: array of longint; N: longint): longint;
+</tt></p></blockquote>
+<blockquote><p class="lang-java" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+class Solution { public int solution(int[] A); }
+</tt></p></blockquote>
+<blockquote><p class="lang-py" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+def solution(A)
+</tt></p></blockquote>
+<blockquote><p class="lang-php" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+function solution($A);
+</tt></p></blockquote>
+<blockquote><p class="lang-cs" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+class Solution { public int solution(int[] A); }
+</tt></p></blockquote>
+<blockquote><p class="lang-js" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+function solution(A);
+</tt></p></blockquote>
+<blockquote><p class="lang-pl" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+sub solution { my (@A)=@_; ... }
+</tt></p></blockquote>
+<blockquote><p class="lang-rb" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+def solution(a)
+</tt></p></blockquote>
+<blockquote><p class="lang-vb" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+Private Function solution(A As Integer()) As Integer
+</tt></p></blockquote>
+<blockquote><p class="lang-lua" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+function solution(A)
+</tt></p></blockquote>
+<blockquote><p class="lang-m" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+int solution(NSMutableArray *A);
+</tt></p></blockquote>
+<blockquote><p class="lang-scala" style="font-family: monospace; font-size: 9pt; display: none"><tt>
+object Solution { def solution(A: Array[Int]): Int }
+</tt></p></blockquote>
+<p>that, given a non-empty zero-indexed array A of N integers, returns the largest possible gap size.</p>
+<p>For example, given:</p>
+<p></p><pre><tt>  A[0] = 10
+  A[1] = 0
+  A[2] = 8
+  A[3] = 2
+  A[4] = -1
+  A[5] = 12
+  A[6] = 11
+  A[7] = 3</tt></pre>
+<p>the function should return 2, as explained above.</p>
+<p>Assume that:</p>
+<blockquote><ul style="margin: 10px;padding: 0px;"><li>N is an integer within the range [<span class="number">2</span>..<span class="number">100,000</span>];</li>
+<li>each element of array A is an integer within the range [<span class="number">−1,000,000,000</span>..<span class="number">1,000,000,000</span>].</li>
+</ul>
+</blockquote><p>Complexity:</p>
+<blockquote><ul style="margin: 10px;padding: 0px;"><li>expected worst-case time complexity is O(N*log(N));</li>
+<li>expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).</li>
+</ul>
+</blockquote><p>Elements of input arrays can be modified.</p>
+</div>
